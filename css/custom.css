@@ -10,6 +10,9 @@
   height: 500px;
   width: 90%; }
 
+#second #content h1 {
+  font-size: 15px; }
+
 #third .form {
   margin-left: 10%; }
   #third .form input, #third .form label {
