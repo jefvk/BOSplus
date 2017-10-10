@@ -1,0 +1,29 @@
+#first{
+  h1{
+    margin: auto;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+#second{
+  #map {
+    margin: auto;
+    height: 500px;
+    width: 90%;
+         }
+}
+
+#third{
+  .form{
+    margin-left: 10%;
+    input, label{
+      display: block;
+      width: 200px;
+      float: left;
+      clear: both;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+#first h1 {
+  margin: auto;
+  text-align: center; }
+
+#first p {
+  text-align: center; }
+
+#second #map {
+  margin: auto;
+  height: 500px;
+  width: 90%; }
+
+#third .form {
+  margin-left: 10%; }
+  #third .form input, #third .form label {
+    display: block;
+    width: 200px;
+    float: left;
+    clear: both; }
