@@ -1,22 +1,104 @@
-#first h1 {
-  margin: auto;
-  text-align: center; }
+@font-face {
+  font-family: BoomBox;
+  src: url("../ARCENA.ttf"); }
 
-#first p {
-  text-align: center; }
-
-#second #map {
-  margin: auto;
-  height: 500px;
-  width: 90%; }
-
-#second #content h1 {
-  font-size: 15px; }
-
-#third .form {
-  margin-left: 10%; }
-  #third .form input, #third .form label {
+#first {
+  background: #0E6D42; }
+  #first img {
+    width: 300px;
     display: block;
-    width: 200px;
-    float: left;
-    clear: both; }
+    margin: auto; }
+  #first p {
+    font-family: "Cabin";
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    width: 700px;
+    font-size: 20px; }
+  #first ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 700px;
+    margin: auto; }
+    #first ul li {
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      width: 33%; }
+      #first ul li img {
+        width: 80%;
+        display: block;
+        margin: auto; }
+
+#second {
+  background: #7DAB61; }
+  #second h1 {
+    font-family: "BoomBox";
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white; }
+  #second #map {
+    margin: auto;
+    height: 500px;
+    width: 90%;
+    border: 5px solid #0E6D42;
+    border-radius: 10px; }
+    #second #map #content h1 {
+      color: #0E6D42;
+      font-size: 20px;
+      padding: 0px; }
+  #second #gform {
+    width: 90%;
+    margin: auto;
+    overflow: auto; }
+    #second #gform fieldset {
+      width: 25%;
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      #second #gform fieldset label {
+        color: white;
+        font-family: "cabin";
+        font-size: 20px;
+        width: 100%;
+        text-align: center; }
+      #second #gform fieldset input {
+        font-size: 20px;
+        font-family: "cabin";
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #0E6D42; }
+      #second #gform fieldset ::-webkit-input-placeholder {
+        color: lightgrey; }
+      #second #gform fieldset ::-moz-placeholder {
+        color: lightgrey; }
+      #second #gform fieldset :-ms-input-placeholder {
+        color: lightgrey; }
+      #second #gform fieldset :-moz-placeholder {
+        color: lightgrey; }
+    #second #gform .submit {
+      width: 25%;
+      float: right;
+      margin-bottom: 20px; }
+      #second #gform .submit button {
+        margin-right: 5%;
+        width: 200px;
+        display: block;
+        font-family: "BoomBox";
+        color: white;
+        background: #0E6D42;
+        border-radius: 10px;
+        border: none;
+        float: right;
+        padding: 5px;
+        font-size: 20px; }
