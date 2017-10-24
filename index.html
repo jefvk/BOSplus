@@ -7,9 +7,6 @@
   <!-- RESET -->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
 
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <!-- FONT AWESOME -->
   <script src="https://use.fontawesome.com/e7deea485a.js"></script>
@@ -21,15 +18,40 @@
   <title>Boom Box</title>
 </head>
   <body>
+    <section id="menu">
+      <div id="burger" style="cursor: pointer;">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+
+      <ul class="menu inv">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Wat is de Boom Box?</a></li>
+        <li><a href="#">Activiteiten in het Bos</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+      </ul>
+    </section>
+
     <section id="first">
-      <img src="img/logowit-01.png" alt="logo Boom Box">
+      <img src="img/logo-01.png" alt="logo Boom Box">
+
+      <ul>
+        <li><img src="img/bospluslogo-01-01.png" alt="logo BOS+"></li>
+        <li><img src="img/logomfl-01-01.png" alt="logo De warmste Week"></li>
+        <li><img src="img/logoap-01-01.png" alt="logo AP Hogeschool"></li>
+      </ul>
+    </section>
+
+    <section id="intermezzo">
       <p>Welkom bij Boom Box. Bedankt voor uw aankoop en de steun voor BOS+. Of als u nog geen doosje gekocht heeft, welkom op onze website en welkom bij ons project.<br>
 
       Boom Box is een kleine actie georganiseerd door 4 studenten van de AP Hogeschool Antwerpen in het kader van Music for Life (de warmste week) van Studio Brussel. Deze actie steunt het goede doel BOS+.</p>
       <ul>
-        <li><img src="img/logomfl-01.png" alt="logo De warmste Week"></li>
-        <li><img src="img/logobosplus-01.png" alt="logo BOS+"></li>
-        <li><img src="img/logoap-01.png" alt="logo AP Hogeschool"></li>
+        <li><a href="#"><i>Registreer jouw boom</i></a></li>
+        <li><a href="#"><i>Activiteiten voor in het bos</i></a></li>
+        <li><a href="#"><i>Win prachtige prijzen</i></a></li>
       </ul>
     </section>
 
@@ -65,14 +87,9 @@
           <div class="submit">
             <button>Plant je boom!</button>
           </div>
-
-
     </form>
-  				</div>
-
-  					<!-- Customise the Thankyou Message People See when they submit the form: -->
   					<div style="display:none;" id="thankyou_message">
-  						<h2>Bedankt om deel te nemen aan onze actie! Het kan enkele uren duren voordat je boom is toegevoegd aan de map, kom snel terug naar onze website!</h2>
+  						<p>Bedankt om deel te nemen aan onze actie! Het kan enkele uren duren voordat je boom is toegevoegd aan de map, kom snel terug naar onze website!</p>
   					</div>
 
 
@@ -81,12 +98,15 @@
   			</div>
   		</section>
 
-  	</div>
-
-
-  	</script>
-
-    </section>
+<section id="third">
+  <h1>Met jouw steun:</h1>
+  <p>Zijn er al <strong>2</strong>  bomen geregistreerd. Dit wil zeggen:</p>
+  <ul>
+    <li><i class="fa fa-money"></i>10 euro gaat naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Hiermee kunnen zij "x-aantal" vierkante meter bos planten.</li>
+    <li><i class="fa fa-envira"></i>Goed voor "x-aantal" liter verse O² per jaar.</li>
+  </ul>
+</section>
 
     <script>
       function initMap() {
@@ -100,13 +120,13 @@
         });
 
         var tree = {
-           url: 'img/logomarker.png',
+           url: 'img/boomding.png',
            // This marker is 20 pixels wide by 32 pixels high.
-           size: new google.maps.Size(60, 60),
+           size: new google.maps.Size(30, 45),
            // The origin for this image is (0, 0).
            origin: new google.maps.Point(0, 0),
            // The anchor for this image is the base of the flagpole at (0, 32).
-           anchor: new google.maps.Point(0, 17)
+           anchor: new google.maps.Point(0, 10)
          };
          // Shapes define the clickable region of the icon. The type defines an HTML
          // <area> element 'poly' which traces out a polygon as a series of X,Y points.
@@ -146,10 +166,8 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX0-kNIBfWF6AHdkIRhohFNm6shsncTK4&callback=initMap">
     </script>
 
-    <script src="jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- CUSTOM SCRIPT -->
-    <script src="custom.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
