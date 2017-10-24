@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RESET -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+
+  <!-- FONT AWESOME -->
+  <script src="https://use.fontawesome.com/e7deea485a.js"></script>
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+  <title>Boom Box</title>
+</head>
+  <body>
+    <section id="menu">
+      <div id="burger" style="cursor: pointer;">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+
+      <ul class="menu inv">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wat.html">Wat is de Boom Box?</a></li>
+        <li><a href="activiteit.html">Activiteiten in het Bos</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+      </ul>
+    </section>
+
+    <section id="first">
+      <img src="img/logo-01.png" alt="logo Boom Box">
+
+      <ul>
+        <li><img src="img/bospluslogo-01-01.png" alt="logo BOS+"></li>
+        <li><img src="img/logomfl-01-01.png" alt="logo De warmste Week"></li>
+        <li><img src="img/logoap-01-01.png" alt="logo AP Hogeschool"></li>
+      </ul>
+    </section>
+
+    <section id="intermezzo">
+      <p>Welkom bij Boom Box. Bedankt voor uw aankoop en de steun voor BOS+. Of als u nog geen doosje gekocht heeft, welkom op onze website en welkom bij ons project.<br>
+
+      Boom Box is een kleine actie georganiseerd door 4 studenten van de AP Hogeschool Antwerpen in het kader van Music for Life (de warmste week) van Studio Brussel. Deze actie steunt het goede doel BOS+.</p>
+      <ul>
+        <li><a href="index.html#second"><i>Registreer jouw boom</i></a></li>
+        <li><a href="activiteit.html"><i>Activiteiten voor in het bos</i></a></li>
+        <li><a href="wat.html"><i>Win prachtige prijzen</i></a></li>
+      </ul>
+    </section>
+
+    <section id="second">
+      <h1>Registreer uw boom!</h1>
+      <div id="map"></div>
+
+      <form id="gform" class="contactform" method="post" action="https://script.google.com/macros/s/AKfycbz_nPSxdUsLD-5XcNviQcDd9l3tq3GBF7Vu9GTNCkGJ2B12bnQ/exec">
+
+  				<fieldset class="one">
+  		      <label for="name">Naam voor je boom</label><br>
+  		      <input id="name" name="name" placeholder="Naam voor je boom"/>
+  		    </fieldset>
+
+  		    <fieldset class="two">
+  		      <label for="gemeente">Gemeente</label><br>
+  		      <input type="text" name="gemeente" placeholder="Gemeente" id="gemeente">
+  		    </fieldset>
+
+  		    <fieldset class="three">
+  		      <label for="email">E-mail adres</label><br>
+  		      <input id="email" name="email" type="email" value=""
+  		      required placeholder="Voorbeeld@email.com"/>
+  		      <span id="email-invalid" style="display:none">
+  		        Dit is geen juist email adres.</span>
+  		    </fieldset>
+
+          <fieldset class="four">
+           <label for="code">Unieke code</label><br>
+           <input id="code" name="code" placeholder="xx-xx-xx"/>
+          </fieldset>
+
+          <div class="submit">
+            <button>Plant je boom!</button>
+          </div>
+    </form>
+  					<div style="display:none;" id="thankyou_message">
+  						<p>Bedankt om deel te nemen aan onze actie! Het kan enkele uren duren voordat je boom is toegevoegd aan de map. Onze bomen groeien soms wat traag, kom snel terug naar onze site!</p>
+  					</div>
+
+
+  					<script data-cfasync="false" type="text/javascript"
+  					src="form-submission-handler.js"></script>
+  			</div>
+  		</section>
+
+<section id="third">
+  <h1>Met jouw steun:</h1>
+  <p>Zijn er al <strong>2</strong>  bomen geregistreerd. Dit wil zeggen:</p>
+  <ul>
+    <li><i class="fa fa-money"></i>10 euro gaat naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Hiermee kunnen zij "x-aantal" vierkante meter bos planten.</li>
+    <li><i class="fa fa-envira"></i>Goed voor "x-aantal" liter verse O² per jaar.</li>
+  </ul>
+</section>
+
+    <script>
+      function initMap() {
+        var center = {lat: 51 , lng: 4.351356};
+        var wiekevorst = {lat: 51.109355, lng: 4.795114};
+        var antwerpen = {lat: 51.216904, lng: 4.408565};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+        styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
+          center: center
+        });
+
+        var tree = {
+           url: 'img/boomding.png',
+           // This marker is 20 pixels wide by 32 pixels high.
+           size: new google.maps.Size(30, 45),
+           // The origin for this image is (0, 0).
+           origin: new google.maps.Point(0, 0),
+           // The anchor for this image is the base of the flagpole at (0, 32).
+           anchor: new google.maps.Point(0, 10)
+         };
+         // Shapes define the clickable region of the icon. The type defines an HTML
+         // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+         // The final coordinate closes the poly by connecting to the first coordinate.
+         var shape = {
+           coords: [1, 1, 1, 20, 18, 20, 18, 1],
+           type: 'poly'
+         };
+
+        var contentString1 = '<div id="content">'+
+             '<h1>Wiekevorst</h1>'+
+             '</div>'+
+             '</div>';
+
+        var infowindow1 = new google.maps.InfoWindow({
+           content: contentString1
+         });
+
+        var marker1 = new google.maps.Marker({
+          position: wiekevorst,
+          icon: tree,
+          map: map
+        });
+        marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: antwerpen,
+          icon: tree,
+          map: map
+        });
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX0-kNIBfWF6AHdkIRhohFNm6shsncTK4&callback=initMap">
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

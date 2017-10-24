@@ -1,0 +1,542 @@
+@font-face {
+  font-family: BoomBox;
+  src: url("../ARCENA.ttf");
+}
+
+$groen: #95CDB3;
+$donkergroen: #00967B;
+$yellow: #F7C000;
+$red: #DE2622;
+$andergroen: #7BB997;
+$kakigroen: #7DAB61;
+$bruin: #2B1109;
+$lichtbruin: #A47551;
+
+#menu{
+  #burger{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    display: block;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    .stripe{
+      width: 30px;
+      height: 4px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: white;
+
+      -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+     -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+     -o-transition: .25s ease-in-out;
+     transition: .25s ease-in-out;
+
+     &:nth-of-type(1){
+       top: 0px;
+     }
+     &:nth-of-type(2), &:nth-of-type(3){
+       top: 8px;
+     }
+     &:nth-of-type(4){
+       top: 16px;
+     }
+    }
+  }
+  #burger.open .stripe:nth-child(1) {
+  top: 8px;
+  width: 0%;
+  }
+  #burger.open .stripe:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #burger.open .stripe:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #burger.open .stripe:nth-child(4) {
+    top: 8px;
+    width: 0%;
+  }
+  ul{
+    width: 300px;
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition: .25s ease-in-out;
+   -moz-transition: .25s ease-in-out;
+   -o-transition: .25s ease-in-out;
+   transition: .25s ease-in-out;
+   opacity: 1;
+    li{
+      a{
+        display: block;
+        width: 100%;
+        color: white;
+        font-family: 'Cabin';
+        font-size: 20px;
+        padding: 5px;
+        border-bottom: 1px solid white;
+        text-decoration: none;
+        padding: 10px;
+        &:hover{
+          background: $groen;
+        }
+      }
+    }
+  }
+  ul.inv{
+    -webkit-transform: translateY(50px);
+   -moz-transform: translateY(50px);
+   -o-transform: translateY(50px);
+   transform: translateY(50px);
+   opacity: 0;
+  }
+}
+
+#first{
+  background: $donkergroen;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  img{
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  ul{
+    display: flex;
+    width: 700px;
+    margin: auto;
+    li{
+      justify-content: space-around;
+      width: 33%;
+      img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        vertical-align: center;
+      }
+    }
+  }
+}
+
+#intermezzo{
+  background: $andergroen;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  p{
+    font-family: "Cabin";
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    width: 1000px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  ul{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    li{
+      width: 30%;
+      margin: 1.5%;
+      justify-content: space-between;
+      background-size: cover;
+      border: 5px solid $groen;
+      border-radius: 10px;
+      &:nth-of-type(1){
+              background-image: url('../img/bos1.jpg');
+      }
+      &:nth-of-type(2){
+              background-image: url('../img/speelbos.jpg');
+      }
+      &:nth-of-type(3){
+              background-image: url('../img/happy.jpeg');
+      }
+      &:hover{
+        border: 5px solid   white;
+      }
+      a{
+        display: block;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-family: "Boombox";
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        i{
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+#second{
+  background: $groen;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  h1{
+    font-family: "BoomBox";
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+  }
+  #map {
+    margin: auto;
+    margin-top: 20px;
+    height: 500px;
+    width: 90%;
+    border: 5px solid $donkergroen;
+    border-radius: 10px;
+    #content{
+      h1{
+        color: $donkergroen;
+        font-size: 20px;
+        padding: 0px;
+      }
+    }
+         }
+    #gform{
+      width: 90%;
+      margin: auto;
+      overflow: auto;
+      fieldset{
+        width: 25%;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        label{
+          color: white;
+          font-family: "cabin";
+          font-size: 20px;
+          display: block;
+          width: 90%;
+          margin: auto;
+        }
+        input{
+          font-size: 15px;
+          font-family: "cabin";
+          width: 90%;
+          display: block;
+          margin: auto;
+          padding: 10px;
+          border-radius: 10px;
+          border: 2px solid $donkergroen;
+        }
+        ::-webkit-input-placeholder {
+          color: lightgrey;
+        }
+        ::-moz-placeholder {
+          color: lightgrey;
+        }
+        :-ms-input-placeholder {
+          color: lightgrey;
+        }
+        :-moz-placeholder {
+          color: lightgrey;
+        }
+      }
+      .submit{
+        width: 25%;
+        float: right;
+        margin-bottom: 20px;
+        button{
+          margin-right: 5%;
+          width: 200px;
+          display: block;
+          font-family: "BoomBox";
+          color: white;
+          background: $donkergroen;
+          border-radius: 10px;
+          border: none;
+          float: right;
+          padding: 5px;
+          font-size: 25px;
+        }
+      }
+    }
+    #thankyou_message{
+      p{
+        font-family: "Cabin";
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        width: 700px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  #third{
+    background: $donkergroen;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    h1{
+      font-family: "BoomBox";
+      display: block;
+      text-align: center;
+      margin: auto;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+    }
+    p{
+      font-family: "Cabin";
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      color: white;
+      width: 700px;
+      font-size: 20px;
+      strong{
+        background-color: white;
+        color: $donkergroen;
+        padding: 2px;
+      }
+    }
+    ul{
+      display: flex;
+      li{
+        i{
+          display: block;
+          margin: auto;
+          font-size: 100px;
+          margin-bottom: 10px;
+        }
+        justify-content: space-around;
+        font-family: "Cabin";
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        width: 700px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  #Boombox{
+    background: $kakigroen;
+    overflow: auto;
+    .img{
+      width: 50%;
+      float: left;
+      background-image: url('../img/bos1.jpg');
+      background-size: cover;
+      img{
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .tekst{
+      float: right;
+      width: 50%;
+      p{
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+  }
+  #Warmsteweek{
+    background: $groen;
+    overflow: auto;
+    .img{
+      width: 50%;
+      float: right;
+      background-image: url('../img/stubru.jpg');
+      background-size: cover;
+      img{
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .tekst{
+      float: right;
+      width: 50%;
+      p{
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+  }
+  #bosplus{
+    background: $andergroen;
+    overflow: auto;
+    .img{
+      width: 50%;
+      float: left;
+      background-image: url('../img/bos2.jpeg');
+      background-size: cover;
+      img{
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .tekst{
+      float: right;
+      width: 50%;
+      p{
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+  }
+
+#uitleg_boombox{
+  background: $groen;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    p{
+      font-family: "Cabin";
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+      color: white;
+      width: 1000px;
+      font-size: 20px;
+      line-height: 120%;
+    }
+    ul{
+      font-family: 'cabin';
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      width: 1000px;
+      margin: auto;
+    }
+    h1{
+      font-family: 'Boombox';
+      font-size: 30px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+}
+
+#footer{
+  background: $lichtbruin;
+  ul{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    li{
+      width: 30%;
+      margin: 1.5%;
+      justify-content: space-between;
+      background-size: cover;
+      border: 5px solid SADDLEBROWN;
+      border-radius: 10px;
+      &:nth-of-type(1){
+              background-image: url('../img/bos1.jpg');
+      }
+      &:nth-of-type(2){
+              background-image: url('../img/speelbos.jpg');
+      }
+      &:nth-of-type(3){
+              background-image: url('../img/happy.jpeg');
+      }
+      &:hover{
+        border: 5px solid   white;
+      }
+      a{
+        display: block;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-family: "Boombox";
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        i{
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.tempor{
+  font-family: 'cabin';
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}

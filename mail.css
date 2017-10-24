@@ -1,0 +1,40 @@
+@font-face {
+    font-family: ac;
+    src: url(ARCENA.ttf);
+}
+
+body{
+  width: 500px;
+  margin: auto;
+}
+img{
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1{
+  font-family: ac;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p{
+  font-family:helvetica, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 20px;
+  color: grey;
+}
+strong{
+  font-weight: bold;
+  font-family: helvetica, sans-serif;
+  color: grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  line-height: 20px;
+}
