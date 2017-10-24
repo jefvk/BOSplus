@@ -9,6 +9,8 @@ $yellow: #F7C000;
 $red: #DE2622;
 $andergroen: #7BB997;
 $kakigroen: #7DAB61;
+$bruin: #2B1109;
+$lichtbruin: #A47551;
 
 #menu{
   #burger{
@@ -355,20 +357,186 @@ $kakigroen: #7DAB61;
   }
 
   #Boombox{
-    background: $donkergroen;
+    background: $kakigroen;
     overflow: auto;
     .img{
       width: 50%;
       float: left;
+      background-image: url('../img/bos1.jpg');
+      background-size: cover;
       img{
         width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
     }
     .tekst{
       float: right;
       width: 50%;
       p{
-        width: 50%;
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
       }
     }
   }
+  #Warmsteweek{
+    background: $groen;
+    overflow: auto;
+    .img{
+      width: 50%;
+      float: right;
+      background-image: url('../img/stubru.jpg');
+      background-size: cover;
+      img{
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .tekst{
+      float: right;
+      width: 50%;
+      p{
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+  }
+  #bosplus{
+    background: $andergroen;
+    overflow: auto;
+    .img{
+      width: 50%;
+      float: left;
+      background-image: url('../img/bos2.jpeg');
+      background-size: cover;
+      img{
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .tekst{
+      float: right;
+      width: 50%;
+      p{
+        padding-top: 20px;
+        width: 90%;
+        font-family: "Cabin";
+        display: block;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+  }
+
+#uitleg_boombox{
+  background: $groen;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    p{
+      font-family: "Cabin";
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+      color: white;
+      width: 1000px;
+      font-size: 20px;
+      line-height: 120%;
+    }
+    ul{
+      font-family: 'cabin';
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      width: 1000px;
+      margin: auto;
+    }
+    h1{
+      font-family: 'Boombox';
+      font-size: 30px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+}
+
+#footer{
+  background: $lichtbruin;
+  ul{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    li{
+      width: 30%;
+      margin: 1.5%;
+      justify-content: space-between;
+      background-size: cover;
+      border: 5px solid SADDLEBROWN;
+      border-radius: 10px;
+      &:nth-of-type(1){
+              background-image: url('../img/bos1.jpg');
+      }
+      &:nth-of-type(2){
+              background-image: url('../img/speelbos.jpg');
+      }
+      &:nth-of-type(3){
+              background-image: url('../img/happy.jpeg');
+      }
+      &:hover{
+        border: 5px solid   white;
+      }
+      a{
+        display: block;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-family: "Boombox";
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        i{
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.tempor{
+  font-family: 'cabin';
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
