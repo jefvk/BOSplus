@@ -65,6 +65,7 @@
 
 #menu ul {
   width: 300px;
+  background: #00967B;
   display: block;
   position: absolute;
   right: 40px;
@@ -476,3 +477,70 @@
   font-size: 30px;
   font-weight: bold;
   padding-top: 20px; }
+
+@media screen and (max-width: 1200px) {
+  #intermezzo p {
+    width: 700px; }
+  #intermezzo ul li {
+    background-image: none !important;
+    background: #95CDB3; }
+    #intermezzo ul li a {
+      line-height: 30px;
+      background: none;
+      height: auto;
+      padding: 10px; }
+      #intermezzo ul li a i {
+        background: none; } }
+
+@media screen and (max-width: 1100px) {
+  #second #gform fieldset {
+    width: 50%; }
+  #second #gform .one, #second #gform .two {
+    float: left; }
+  #second #gform .three, #second #gform .four {
+    float: right; } }
+
+@media screen and (max-width: 750px) {
+  #first ul {
+    width: 500px; }
+  #intermezzo p {
+    width: 500px;
+    line-height: 30px; }
+  #third p {
+    width: 500px;
+    line-height: 30px; }
+  #third ul li {
+    line-height: 30px; } }
+
+@media screen and (max-width: 600px) {
+  #first ul {
+    width: 300px; }
+  #intermezzo ul {
+    width: 90%;
+    margin: auto;
+    display: block; }
+    #intermezzo ul li {
+      width: 90%;
+      display: block;
+      margin: 1.5% auto; }
+  #third ul {
+    display: block;
+    width: 90%;
+    margin: auto; }
+    #third ul li {
+      width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  #intermezzo p {
+    text-align: justify;
+    width: 90%; }
+  #second #gform fieldset {
+    width: 100%; }
+  #third p {
+    width: 90%; } }
+
+@media screen and (max-width: 400px) {
+  #menu .menu {
+    width: 250px; }
+  #first img {
+    width: 200px; } }
