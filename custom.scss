@@ -487,6 +487,14 @@ $lichtbruin: #A47551;
       color: white;
       text-align: center;
     }
+    img{
+      width: 300px;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 5px solid $andergroen;
+    }
 }
 
 #footer{
@@ -543,7 +551,7 @@ $lichtbruin: #A47551;
 }
 
 @media screen and (max-width: 1200px){
-  #intermezzo{
+  #intermezzo, #footer{
     p{
       width: 700px;
     }
@@ -578,6 +586,54 @@ $lichtbruin: #A47551;
       }
     }
   }
+  #uitleg_boombox{
+    p{
+      width: 700px;
+    }
+    h1{
+      width: 700px;
+      margin:auto;
+    }
+    ul{
+      width: 700px;
+    }
+  }
+  }
+  @media screen and (max-width: 1000px){
+    #Boombox{
+              background: $donkergroen;
+      .img{
+        display: none;
+      }
+      .tekst{
+        width: 90%;
+        display: block;
+        float: none;
+        margin: auto;
+      }
+    }
+    #Warmsteweek, #bosplus{
+      .img{
+        background: $groen;
+        width: 100%;
+        float: left;
+        img{
+          width: 200px;
+          margin: 20px auto;
+        }
+      }
+      .tekst{
+          width: 90%;
+          display: block;
+          float: none;
+          margin: auto;
+      }
+    }
+    #bosplus{
+      .img{
+        background: $andergroen;
+      }
+    }
   }
   @media screen and (max-width: 750px){
     #first{
@@ -585,7 +641,7 @@ $lichtbruin: #A47551;
         width: 500px;
       }
     }
-    #intermezzo{
+    #intermezzo, #footer{
       p{
         width: 500px;
         line-height: 30px;
@@ -602,6 +658,20 @@ $lichtbruin: #A47551;
         }
       }
     }
+    #uitleg_boombox{
+      p{
+        width: 90%;
+        line-height: 30px;
+      }
+      h1{
+        width: 90%;
+        margin:auto;
+      }
+      ul{
+        width: 90%;
+        line-height: 30px;
+      }
+    }
   }
 @media screen and (max-width: 600px){
   #first{
@@ -609,11 +679,13 @@ $lichtbruin: #A47551;
       width: 300px;
     }
   }
-    #intermezzo{
+    #intermezzo, #footer{
       ul{
         width: 90%;
         margin: auto;
         display: block;
+              padding-top: 20px;
+              padding-bottom: 20px;
         li{
           width: 90%;
           display: block;
@@ -633,7 +705,7 @@ $lichtbruin: #A47551;
   }
 }
 @media screen and (max-width: 500px){
-  #intermezzo{
+  #intermezzo, #footer{
     p{
       text-align: justify;
       width: 90%;
@@ -661,6 +733,11 @@ $lichtbruin: #A47551;
   #first{
     img{
       width: 200px;
+    }
+  }
+  #uitleg_boombox{
+    img{
+      width: 90%;
     }
   }
 }

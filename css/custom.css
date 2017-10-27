@@ -428,6 +428,13 @@
     padding: 20px;
     color: white;
     text-align: center; }
+  #uitleg_boombox img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 5px solid #7BB997; }
 
 #footer {
   background: #A47551; }
@@ -479,17 +486,17 @@
   padding-top: 20px; }
 
 @media screen and (max-width: 1200px) {
-  #intermezzo p {
+  #intermezzo p, #footer p {
     width: 700px; }
-  #intermezzo ul li {
+  #intermezzo ul li, #footer ul li {
     background-image: none !important;
     background: #95CDB3; }
-    #intermezzo ul li a {
+    #intermezzo ul li a, #footer ul li a {
       line-height: 30px;
       background: none;
       height: auto;
       padding: 10px; }
-      #intermezzo ul li a i {
+      #intermezzo ul li a i, #footer ul li a i {
         background: none; } }
 
 @media screen and (max-width: 1100px) {
@@ -498,28 +505,71 @@
   #second #gform .one, #second #gform .two {
     float: left; }
   #second #gform .three, #second #gform .four {
-    float: right; } }
+    float: right; }
+  #uitleg_boombox p {
+    width: 700px; }
+  #uitleg_boombox h1 {
+    width: 700px;
+    margin: auto; }
+  #uitleg_boombox ul {
+    width: 700px; } }
+
+@media screen and (max-width: 1000px) {
+  #Boombox {
+    background: #00967B; }
+    #Boombox .img {
+      display: none; }
+    #Boombox .tekst {
+      width: 90%;
+      display: block;
+      float: none;
+      margin: auto; }
+  #Warmsteweek .img, #bosplus .img {
+    background: #95CDB3;
+    width: 100%;
+    float: left; }
+    #Warmsteweek .img img, #bosplus .img img {
+      width: 200px;
+      margin: 20px auto; }
+  #Warmsteweek .tekst, #bosplus .tekst {
+    width: 90%;
+    display: block;
+    float: none;
+    margin: auto; }
+  #bosplus .img {
+    background: #7BB997; } }
 
 @media screen and (max-width: 750px) {
   #first ul {
     width: 500px; }
-  #intermezzo p {
+  #intermezzo p, #footer p {
     width: 500px;
     line-height: 30px; }
   #third p {
     width: 500px;
     line-height: 30px; }
   #third ul li {
+    line-height: 30px; }
+  #uitleg_boombox p {
+    width: 90%;
+    line-height: 30px; }
+  #uitleg_boombox h1 {
+    width: 90%;
+    margin: auto; }
+  #uitleg_boombox ul {
+    width: 90%;
     line-height: 30px; } }
 
 @media screen and (max-width: 600px) {
   #first ul {
     width: 300px; }
-  #intermezzo ul {
+  #intermezzo ul, #footer ul {
     width: 90%;
     margin: auto;
-    display: block; }
-    #intermezzo ul li {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #intermezzo ul li, #footer ul li {
       width: 90%;
       display: block;
       margin: 1.5% auto; }
@@ -531,7 +581,7 @@
       width: 100%; } }
 
 @media screen and (max-width: 500px) {
-  #intermezzo p {
+  #intermezzo p, #footer p {
     text-align: justify;
     width: 90%; }
   #second #gform fieldset {
@@ -543,4 +593,6 @@
   #menu .menu {
     width: 250px; }
   #first img {
-    width: 200px; } }
+    width: 200px; }
+  #uitleg_boombox img {
+    width: 90%; } }
