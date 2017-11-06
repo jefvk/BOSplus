@@ -477,13 +477,58 @@
           padding: 10px;
           border-radius: 10px; }
 
-.tempor {
-  font-family: 'cabin';
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 20px; }
+#isotope {
+  background: #95CDB3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto; }
+  #isotope .button-group {
+    width: 1000px;
+    margin: auto; }
+    #isotope .button-group button {
+      float: left;
+      margin: 5px;
+      background: #A47551;
+      color: white;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Boombox';
+      font-size: 25px;
+      border: 5px solid #A47551; }
+      #isotope .button-group button:nth-of-type(2), #isotope .button-group button:nth-of-type(5) {
+        clear: both; }
+      #isotope .button-group button:hover {
+        border: 5px solid white;
+        cursor: pointer; }
+  #isotope .grid {
+    clear: both;
+    width: 1000px;
+    margin: auto; }
+    #isotope .grid .grid-item {
+      width: 300px;
+      height: 300px;
+      display: block;
+      border-radius: 10px;
+      border: 5px solid #00967B;
+      margin: 10px;
+      float: left;
+      color: white;
+      font-family: 'Boombox';
+      font-size: 25px;
+      line-height: 300px;
+      text-align: center; }
+      #isotope .grid .grid-item:hover {
+        border: 5px solid white;
+        cursor: pointer; }
+      #isotope .grid .grid-item:nth-of-type(1) {
+        background-image: url("../img/bos1.jpg"); }
+      #isotope .grid .grid-item:nth-of-type(2) {
+        background-image: url("../img/bos2.jpeg"); }
+      #isotope .grid .grid-item:nth-of-type(3) {
+        background-image: url("../img/speelbos.jpg"); }
+      #isotope .grid .grid-item:nth-of-type(4) {
+        background-image: url("../img/bos3.jpeg"); }
 
 @media screen and (max-width: 1200px) {
   #intermezzo p, #footer p {

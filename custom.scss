@@ -541,14 +541,72 @@ $lichtbruin: #A47551;
   }
 }
 
-.tempor{
-  font-family: 'cabin';
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+#isotope{
+  background: $groen;
   padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+  .button-group{
+    width: 1000px;
+    margin: auto;
+    button{
+      float: left;
+      margin: 5px;
+      background: $lichtbruin;
+      color: white;
+      padding:5px;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Boombox';
+      font-size: 25px;
+      border: 5px solid $lichtbruin;
+      &:nth-of-type(2),&:nth-of-type(5){
+        clear: both;
+      }
+      &:hover{
+        border: 5px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+  .grid{
+    clear: both;
+    width: 1000px;
+    margin:auto;
+    .grid-item{
+      width: 300px;
+      height: 300px;
+      display: block;
+      border-radius: 10px;
+      border:5px solid $donkergroen;
+      margin: 10px;
+      float: left;
+      color:white;
+      font-family: 'Boombox';
+      font-size: 25px;
+      line-height: 300px;
+      text-align: center;
+      &:hover{
+        border: 5px solid white;
+        cursor: pointer;
+      }
+      &:nth-of-type(1){
+        background-image: url('../img/bos1.jpg');
+      }
+      &:nth-of-type(2){
+        background-image: url('../img/bos2.jpeg');
+      }
+      &:nth-of-type(3){
+        background-image: url('../img/speelbos.jpg');
+      }
+      &:nth-of-type(4){
+        background-image: url('../img/bos3.jpeg');
+      }
+    }
+  }
 }
+
+
 
 @media screen and (max-width: 1200px){
   #intermezzo, #footer{
