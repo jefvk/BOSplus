@@ -219,6 +219,14 @@ body{
     color: white;
     font-size: 30px;
   }
+  .howto{
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  .howtoo{
+    display: none;
+  }
   #map {
     margin: auto;
     margin-top: 20px;
@@ -722,6 +730,16 @@ body{
     #first{
       ul{
         width: 500px;
+      }
+    }
+    #second{
+      .howto{
+        display: none;
+      }
+      .howtoo{
+        display: block;
+        width: 90%;
+        margin: auto;
       }
     }
     #intermezzo, #footer{

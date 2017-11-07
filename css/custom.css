@@ -196,6 +196,12 @@ body {
     padding: 20px;
     color: white;
     font-size: 30px; }
+  #second .howto {
+    width: 90%;
+    display: block;
+    margin: auto; }
+  #second .howtoo {
+    display: none; }
   #second #map {
     margin: auto;
     margin-top: 20px;
@@ -606,6 +612,12 @@ body {
 @media screen and (max-width: 750px) {
   #first ul {
     width: 500px; }
+  #second .howto {
+    display: none; }
+  #second .howtoo {
+    display: block;
+    width: 90%;
+    margin: auto; }
   #intermezzo p, #footer p {
     width: 500px;
     line-height: 30px; }
