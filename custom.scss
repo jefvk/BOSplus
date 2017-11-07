@@ -12,6 +12,9 @@ $kakigroen: #7DAB61;
 $bruin: #2B1109;
 $lichtbruin: #A47551;
 
+body{
+  background: $lichtbruin;
+}
 #menu{
   #burger{
     width: 30px;
@@ -487,6 +490,16 @@ $lichtbruin: #A47551;
       color: white;
       text-align: center;
     }
+    h2{
+      color: white;
+      font-family: 'cabin';
+      font-size: 20px;
+      width: 1000px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
     img{
       width: 300px;
       display: block;
@@ -586,6 +599,7 @@ $lichtbruin: #A47551;
       font-size: 25px;
       line-height: 300px;
       text-align: center;
+      text-decoration: none;
       &:hover{
         border: 5px solid white;
         cursor: pointer;
@@ -652,6 +666,9 @@ $lichtbruin: #A47551;
       width: 700px;
       margin:auto;
     }
+    h2{
+      width: 700px;
+    }
     ul{
       width: 700px;
     }
@@ -692,6 +709,14 @@ $lichtbruin: #A47551;
         background: $andergroen;
       }
     }
+    #isotope{
+      .button-group{
+        width: 700px;
+      }
+      .grid{
+        width: 700px;
+      }
+    }
   }
   @media screen and (max-width: 750px){
     #first{
@@ -725,9 +750,31 @@ $lichtbruin: #A47551;
         width: 90%;
         margin:auto;
       }
+      h2{
+        width: 90%;
+      }
       ul{
         width: 90%;
         line-height: 30px;
+      }
+    }
+    #isotope{
+      .button-group{
+        width: 90%;
+      }
+      .grid{
+        width: 90%;
+        .grid-item{
+          width: 45%;
+          margin: 1%;
+          background: none;
+          line-height: normal;
+          height: 60px;
+          padding-top: 30px;
+          &:nth-of-type(1),&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+            background-image: none;
+          }
+        }
       }
     }
   }
@@ -796,6 +843,13 @@ $lichtbruin: #A47551;
   #uitleg_boombox{
     img{
       width: 90%;
+    }
+  }
+  #isotope{
+    .grid{
+      .grid-item{
+        width: 40%;
+      }
     }
   }
 }
