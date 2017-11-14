@@ -562,6 +562,32 @@ body{
   }
 }
 
+#sponsors{
+  padding-bottom: 20px;
+  h1{
+    font-family: 'Boombox';
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  ul{
+    width: 100%;
+    display: flex;
+    li{
+    justify-content: space-around;
+    margin: auto;
+      a{
+        display: block;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
 #isotope{
   background: $groen;
   padding-top: 20px;
