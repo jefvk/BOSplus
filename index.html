@@ -120,8 +120,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>2</strong> bomen geplant!</li>
-    <li><i class="fa fa-money"></i>Er gaat al 10 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn al <strong>3</strong> bomen geplant!</li>
+    <li><i class="fa fa-money"></i>Er gaat al 15 euro naar BOS+</li>
   </ul>
 </section>
 
@@ -138,7 +138,8 @@
       function initMap() {
         var center = {lat: 51 , lng: 4.351356};
         var wiekevorst = {lat: 51.109355, lng: 4.795114};
-        var antwerpen = {lat: 51.216904, lng: 4.408565};
+        var edegem = {lat: 51.156730, lng: 4.445280};
+        var sintdenijs = {lat: 50.752571, lng: 3.365328};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -162,14 +163,6 @@
            type: 'poly'
          };
 
-        var contentString1 = '<div id="content">'+
-             '<h1>Wiekevorst</h1>'+
-             '</div>'+
-             '</div>';
-
-        var infowindow1 = new google.maps.InfoWindow({
-           content: contentString1
-         });
 
         var marker1 = new google.maps.Marker({
           position: wiekevorst,
@@ -179,12 +172,48 @@
         marker1.addListener('click', function() {
           infowindow1.open(map, marker1);
         });
+        var contentString1 = '<div id="content">'+
+             '<h1>Wiekevorst</h1>'+
+             '</div>'+
+             '</div>';
+        var infowindow1 = new google.maps.InfoWindow({
+           content: contentString1
+         });
+
 
         var marker2 = new google.maps.Marker({
-          position: antwerpen,
+          position: edegem,
           icon: tree,
           map: map
         });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+        var contentString2 = '<div id="content">'+
+             '<h1>Stories to chair boom</h1>'+
+             '</div>'+
+             '</div>';
+        var infowindow2 = new google.maps.InfoWindow({
+           content: contentString2
+         });
+
+
+         var marker3 = new google.maps.Marker({
+           position: sintdenijs,
+           icon: tree,
+           map: map
+         });
+         marker3.addListener('click', function() {
+           infowindow3.open(map, marker3);
+         });
+         var contentString3 = '<div id="content">'+
+              '<h1>Jeroen</h1>'+
+              '</div>'+
+              '</div>';
+         var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3
+          });
+
       }
     </script>
 
