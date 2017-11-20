@@ -490,6 +490,7 @@ body{
       font-size: 20px;
       width: 1000px;
       margin: auto;
+      font-weight: bold;
     }
     h1{
       font-family: 'Boombox';
@@ -574,14 +575,20 @@ body{
   ul{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     li{
-    justify-content: space-around;
     margin: auto;
       a{
         display: block;
         img{
           width: 100px;
-          height: 100px;
+        }
+      }
+    }
+    .wider{
+      a{
+        img{
+          width: 200px;
         }
       }
     }

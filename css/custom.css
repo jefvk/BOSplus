@@ -430,7 +430,8 @@ body {
     color: white;
     font-size: 20px;
     width: 1000px;
-    margin: auto; }
+    margin: auto;
+    font-weight: bold; }
   #uitleg_boombox h1 {
     font-family: 'Boombox';
     font-size: 30px;
@@ -508,17 +509,18 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     #sponsors ul li {
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
       margin: auto; }
       #sponsors ul li a {
         display: block; }
         #sponsors ul li a img {
-          width: 100px;
-          height: 100px; }
+          width: 100px; }
+    #sponsors ul .wider a img {
+      width: 200px; }
 
 #isotope {
   background: #95CDB3;
