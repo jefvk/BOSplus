@@ -482,6 +482,9 @@ body{
       width: 1000px;
       font-size: 20px;
       line-height: 120%;
+      a{
+        color: white;
+      }
     }
     ul{
       font-family: 'cabin';
@@ -491,6 +494,12 @@ body{
       width: 1000px;
       margin: auto;
       font-weight: bold;
+      a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 30px;
+      }
     }
     h1{
       font-family: 'Boombox';

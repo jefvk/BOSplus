@@ -424,6 +424,8 @@ body {
     width: 1000px;
     font-size: 20px;
     line-height: 120%; }
+    #uitleg_boombox p a {
+      color: white; }
   #uitleg_boombox ul {
     font-family: 'cabin';
     text-align: center;
@@ -432,6 +434,11 @@ body {
     width: 1000px;
     margin: auto;
     font-weight: bold; }
+    #uitleg_boombox ul a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      line-height: 30px; }
   #uitleg_boombox h1 {
     font-family: 'Boombox';
     font-size: 30px;
