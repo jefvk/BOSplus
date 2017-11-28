@@ -523,11 +523,18 @@ body {
     #sponsors ul li {
       margin: auto; }
       #sponsors ul li a {
-        display: block; }
+        display: block;
+        color: white;
+        font-family: "cabin";
+        text-decoration: none; }
         #sponsors ul li a img {
           width: 100px; }
-    #sponsors ul .wider a img {
-      width: 200px; }
+    #sponsors ul .wider a {
+      color: white;
+      font-family: "cabin";
+      text-decoration: none; }
+      #sponsors ul .wider a img {
+        width: 200px; }
 
 #isotope {
   background: #95CDB3;
