@@ -141,6 +141,7 @@
       function initMap() {
         var center = {lat: 51 , lng: 4.351356};
         var wiekevorst = {lat: 51.109355, lng: 4.795114};
+        var wiekevorst2 = {lat: 51.105491, lng: 4.787381};
         var edegem = {lat: 51.156730, lng: 4.445280};
         var sintdenijs = {lat: 50.752571, lng: 3.365328};
         var heistopdenberg = {lat: 51.074107, lng: 4.727496};
@@ -177,7 +178,7 @@
           infowindow1.open(map, marker1);
         });
         var contentString1 = '<div id="content">'+
-             '<h1>Wiekevorst</h1>'+
+             '<h1>Jef</h1>'+
              '</div>'+
              '</div>';
         var infowindow1 = new google.maps.InfoWindow({
@@ -234,6 +235,23 @@
           var infowindow4 = new google.maps.InfoWindow({
              content: contentString4
            });
+
+
+           var marker5 = new google.maps.Marker({
+             position: wiekevorst2,
+             icon: tree,
+             map: map
+           });
+           marker5.addListener('click', function() {
+             infowindow5.open(map, marker5);
+           });
+           var contentString5 = '<div id="content">'+
+                '<h1>Eddy</h1>'+
+                '</div>'+
+                '</div>';
+           var infowindow5 = new google.maps.InfoWindow({
+              content: contentString5
+            });
 
       }
     </script>
