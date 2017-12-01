@@ -121,8 +121,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>5</strong> bomen geplant!</li>
-    <li><i class="fa fa-money"></i>Er gaat al 25 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn al <strong>7</strong> bomen geplant!</li>
+    <li><i class="fa fa-money"></i>Er gaat al 35 euro naar BOS+</li>
   </ul>
 </section>
 
@@ -145,6 +145,8 @@
         var edegem = {lat: 51.156730, lng: 4.445280};
         var sintdenijs = {lat: 50.752571, lng: 3.365328};
         var heistopdenberg = {lat: 51.074107, lng: 4.727496};
+        var grobbendonk = {lat: 51.191526, lng: 4.738670};
+        var grobbendonk2 = {lat: 51.191324, lng: 4.735559};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -252,6 +254,38 @@
            var infowindow5 = new google.maps.InfoWindow({
               content: contentString5
             });
+
+            var marker6 = new google.maps.Marker({
+              position: grobbendonk,
+              icon: tree,
+              map: map
+            });
+            marker6.addListener('click', function() {
+              infowindow6.open(map, marker6);
+            });
+            var contentString6 = '<div id="content">'+
+                 '<h1>Aboompje</h1>'+
+                 '</div>'+
+                 '</div>';
+            var infowindow6 = new google.maps.InfoWindow({
+               content: contentString6
+             });
+
+             var marker7 = new google.maps.Marker({
+               position: grobbendonk2,
+               icon: tree,
+               map: map
+             });
+             marker7.addListener('click', function() {
+               infowindow7.open(map, marker7);
+             });
+             var contentString7 = '<div id="content">'+
+                  '<h1>Guiske</h1>'+
+                  '</div>'+
+                  '</div>';
+             var infowindow7 = new google.maps.InfoWindow({
+                content: contentString7
+              });
 
       }
     </script>
