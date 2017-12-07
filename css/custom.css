@@ -426,6 +426,8 @@ body {
     line-height: 120%; }
     #uitleg_boombox p a {
       color: white; }
+  #uitleg_boombox .vet {
+    font-weight: bold; }
   #uitleg_boombox ul {
     font-family: 'cabin';
     text-align: center;
