@@ -152,6 +152,7 @@
         var grobbendonk2 = {lat: 51.191324, lng: 4.735559};
         var haacht = {lat: 50.977018, lng: 4.637870};
         var damme = {lat: 51.250917, lng: 3.283194};
+        var holsbeek = {lat: 50.920966, lng: 4.758253};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -324,6 +325,22 @@
                var infowindow9 = new google.maps.InfoWindow({
                   content: contentString9
                 });
+
+                var marker10 = new google.maps.Marker({
+                  position: holsbeek,
+                  icon: tree,
+                  map: map
+                });
+                marker10.addListener('click', function() {
+                  infowindow10.open(map, marker10);
+                });
+                var contentString10 = '<div id="content">'+
+                     '<h1>Otisdrasyll</h1>'+
+                     '</div>'+
+                     '</div>';
+                var infowindow10 = new google.maps.InfoWindow({
+                   content: contentString10
+                 });
 
       }
     </script>
