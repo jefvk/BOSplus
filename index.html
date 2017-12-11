@@ -122,8 +122,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>9</strong> bomen geplant!</li>
-    <li><i class="fa fa-money"></i>Er gaat al 45 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn al <strong>11</strong> bomen geplant!</li>
+    <li><i class="fa fa-money"></i>Er gaat al 55 euro naar BOS+</li>
   </ul>
 </section>
 
@@ -153,6 +153,7 @@
         var haacht = {lat: 50.977018, lng: 4.637870};
         var damme = {lat: 51.250917, lng: 3.283194};
         var holsbeek = {lat: 50.920966, lng: 4.758253};
+        var pulderbos = {lat: 51.217078, lng: 4.692157};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -342,6 +343,22 @@
                    content: contentString10
                  });
 
+
+                 var marker11 = new google.maps.Marker({
+                   position: pulderbos,
+                   icon: tree,
+                   map: map
+                 });
+                 marker11.addListener('click', function() {
+                   infowindow11.open(map, marker11);
+                 });
+                 var contentString11 = '<div id="content">'+
+                      '<h1>Baptist</h1>'+
+                      '</div>'+
+                      '</div>';
+                 var infowindow11 = new google.maps.InfoWindow({
+                    content: contentString11
+                  });
       }
     </script>
 
