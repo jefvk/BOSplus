@@ -114,13 +114,11 @@ body {
     margin: auto; }
   #first ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 700px;
     margin: auto; }
     #first ul a {
-      -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       width: 33%; }
@@ -149,14 +147,12 @@ body {
     width: 90%;
     margin: auto;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     #intermezzo ul li {
       width: 30%;
       margin: 1.5%;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
       background-size: cover;
@@ -301,11 +297,9 @@ body {
       padding: 2px; }
   #third ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     #third ul li {
-      -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       font-family: "Cabin";
@@ -470,14 +464,12 @@ body {
     width: 90%;
     margin: auto;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     #footer ul li {
       width: 30%;
       margin: 1.5%;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
       background-size: cover;
@@ -516,10 +508,8 @@ body {
   #sponsors ul {
     width: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     #sponsors ul li {
@@ -591,6 +581,14 @@ body {
         background-image: url("../img/speelbos.jpg"); }
       #isotope .grid .grid-item:nth-of-type(4) {
         background-image: url("../img/bos3.jpeg"); }
+      #isotope .grid .grid-item:nth-of-type(5) {
+        background-image: url("../img/bos5.jpeg"); }
+      #isotope .grid .grid-item:nth-of-type(6) {
+        background-image: url("../img/bos6.jpg"); }
+      #isotope .grid .grid-item:nth-of-type(7) {
+        background-image: url("../img/bos7.jpeg"); }
+      #isotope .grid .grid-item:nth-of-type(8) {
+        background-image: url("../img/bos8.jpeg"); }
 
 @media screen and (max-width: 1200px) {
   #intermezzo p, #footer p {
