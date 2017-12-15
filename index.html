@@ -154,6 +154,7 @@
         var damme = {lat: 51.250917, lng: 3.283194};
         var holsbeek = {lat: 50.920966, lng: 4.758253};
         var pulderbos = {lat: 51.217078, lng: 4.692157};
+        var pulderbos2 = {lat: 51.216541, lng: 4.690355};
         var vilvoorde = {lat: 50.928479, lng: 4.423638};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
@@ -376,6 +377,22 @@
                   var infowindow12 = new google.maps.InfoWindow({
                      content: contentString12
                    });
+
+                   var marker13 = new google.maps.Marker({
+                     position: pulderbos2,
+                     icon: tree,
+                     map: map
+                   });
+                   marker13.addListener('click', function() {
+                     infowindow13.open(map, marker13);
+                   });
+                   var contentString13 = '<div id="content">'+
+                        '<h1>1, 2, Tree</h1>'+
+                        '</div>'+
+                        '</div>';
+                   var infowindow13 = new google.maps.InfoWindow({
+                      content: contentString13
+                    });
       }
     </script>
 
