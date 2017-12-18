@@ -108,10 +108,13 @@ body {
   background: #00967B;
   padding-bottom: 50px;
   padding-top: 20px; }
-  #first img {
-    width: 300px;
+  #first a {
     display: block;
+    width: 300px;
     margin: auto; }
+    #first a img {
+      width: 300px;
+      display: block; }
   #first ul {
     display: -webkit-box;
     display: -ms-flexbox;
