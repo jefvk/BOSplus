@@ -122,8 +122,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>15</strong> bomen geplant!</li>
-    <li><i class="fa fa-money"></i>Er gaat al 75 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn al <strong>16</strong> bomen geplant!</li>
+    <li><i class="fa fa-money"></i>Er gaat al 80 euro naar BOS+</li>
   </ul>
 </section>
 
@@ -158,6 +158,7 @@
         var pulderbos2 = {lat: 51.216541, lng: 4.690355};
         var vilvoorde = {lat: 50.928479, lng: 4.423638};
         var niel = {lat: 51.109103, lng: 4.332031};
+        var elversele = {lat: 51.118484, lng: 4.145457};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -427,6 +428,22 @@
                      var infowindow15 = new google.maps.InfoWindow({
                         content: contentString15
                       });
+
+                      var marker16 = new google.maps.Marker({
+                        position: elversele,
+                        icon: tree,
+                        map: map
+                      });
+                      marker16.addListener('click', function() {
+                        infowindow16.open(map, marker16);
+                      });
+                      var contentString16 = '<div id="content">'+
+                           '<h1>Blue Eyes White Dragon</h1>'+
+                           '</div>'+
+                           '</div>';
+                      var infowindow16 = new google.maps.InfoWindow({
+                         content: contentString16
+                       });
       }
     </script>
 
