@@ -146,6 +146,7 @@
         var wiekevorst = {lat: 51.109355, lng: 4.795114};
         var wiekevorst2 = {lat: 51.105491, lng: 4.787381};
         var wiekevorst3 = {lat: 51.113036, lng: 4.799687};
+        var wiekevorst4 = {lat: 51.114575, lng: 4.777290};
         var edegem = {lat: 51.156730, lng: 4.445280};
         var sintdenijs = {lat: 50.752571, lng: 3.365328};
         var heistopdenberg = {lat: 51.074107, lng: 4.727496};
@@ -444,6 +445,22 @@
                       var infowindow16 = new google.maps.InfoWindow({
                          content: contentString16
                        });
+
+                       var marker17 = new google.maps.Marker({
+                         position: wiekevorst4,
+                         icon: tree,
+                         map: map
+                       });
+                       marker17.addListener('click', function() {
+                         infowindow17.open(map, marker17);
+                       });
+                       var contentString17 = '<div id="content">'+
+                            '<h1>Fredje</h1>'+
+                            '</div>'+
+                            '</div>';
+                       var infowindow17 = new google.maps.InfoWindow({
+                          content: contentString17
+                        });
       }
     </script>
 
