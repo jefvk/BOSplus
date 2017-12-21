@@ -122,8 +122,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>88</strong> bomen verkocht!<br>Heb jij die van jouw al geregistreerd?</li>
-    <li><i class="fa fa-money"></i>Er gaat al 445 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn al <strong>139</strong> bomen verkocht!<br>Heb jij die van jouw al geregistreerd?</li>
+    <li><i class="fa fa-money"></i>Er gaat al 695 euro naar BOS+</li>
   </ul>
 </section>
 
@@ -147,6 +147,7 @@
         var wiekevorst2 = {lat: 51.105491, lng: 4.787381};
         var wiekevorst3 = {lat: 51.113036, lng: 4.799687};
         var wiekevorst4 = {lat: 51.114575, lng: 4.777290};
+        var wiekevorst5 = {lat: 51.105177, lng: 4.804705};
         var edegem = {lat: 51.156730, lng: 4.445280};
         var sintdenijs = {lat: 50.752571, lng: 3.365328};
         var heistopdenberg = {lat: 51.074107, lng: 4.727496};
@@ -160,6 +161,7 @@
         var vilvoorde = {lat: 50.928479, lng: 4.423638};
         var niel = {lat: 51.109103, lng: 4.332031};
         var elversele = {lat: 51.118484, lng: 4.145457};
+        var erpe= {lat: 50.933522, lng: 3.978797}
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -461,6 +463,38 @@
                        var infowindow17 = new google.maps.InfoWindow({
                           content: contentString17
                         });
+
+                        var marker18 = new google.maps.Marker({
+                          position: erpe,
+                          icon: tree,
+                          map: map
+                        });
+                        marker18.addListener('click', function() {
+                          infowindow18.open(map, marker18);
+                        });
+                        var contentString18 = '<div id="content">'+
+                             '<h1>Happy Thoughts</h1>'+
+                             '</div>'+
+                             '</div>';
+                        var infowindow18 = new google.maps.InfoWindow({
+                           content: contentString18
+                         });
+
+                         var marker19 = new google.maps.Marker({
+                           position: wiekevorst5,
+                           icon: tree,
+                           map: map
+                         });
+                         marker19.addListener('click', function() {
+                           infowindow19.open(map, marker19);
+                         });
+                         var contentString19 = '<div id="content">'+
+                              '<h1>Laure</h1>'+
+                              '</div>'+
+                              '</div>';
+                         var infowindow19 = new google.maps.InfoWindow({
+                            content: contentString19
+                          });
       }
     </script>
 
