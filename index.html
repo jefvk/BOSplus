@@ -162,6 +162,7 @@
         var niel = {lat: 51.109103, lng: 4.332031};
         var elversele = {lat: 51.118484, lng: 4.145457};
         var erpe= {lat: 50.933522, lng: 3.978797}
+        var veurne = {lat: 51.071918, lng: 2.667245}
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -495,6 +496,22 @@
                          var infowindow19 = new google.maps.InfoWindow({
                             content: contentString19
                           });
+
+                          var marker20 = new google.maps.Marker({
+                            position: veurne,
+                            icon: tree,
+                            map: map
+                          });
+                          marker20.addListener('click', function() {
+                            infowindow20.open(map, marker20);
+                          });
+                          var contentString20 = '<div id="content">'+
+                               '<h1>Boombartje</h1>'+
+                               '</div>'+
+                               '</div>';
+                          var infowindow20 = new google.maps.InfoWindow({
+                             content: contentString20
+                           });
       }
     </script>
 
