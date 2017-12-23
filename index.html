@@ -161,8 +161,13 @@
         var vilvoorde = {lat: 50.928479, lng: 4.423638};
         var niel = {lat: 51.109103, lng: 4.332031};
         var elversele = {lat: 51.118484, lng: 4.145457};
-        var erpe= {lat: 50.933522, lng: 3.978797}
-        var veurne = {lat: 51.071918, lng: 2.667245}
+        var erpe= {lat: 50.933522, lng: 3.978797};
+        var veurne = {lat: 51.071918, lng: 2.667245};
+        var borgerhout = {lat: 51.223278, lng: 4.436373};
+        var borgerhout2 = {lat: 51.223693, lng: 4.433069};
+        var rollegem = {lat: 50.868403, lng: 3.144137};
+        var roeselare = {lat: 50.951281, lng: 3.128826};
+        var roeselare2 = {lat: 50.950807, lng: 3.115313};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -512,6 +517,86 @@
                           var infowindow20 = new google.maps.InfoWindow({
                              content: contentString20
                            });
+
+                           var marker21 = new google.maps.Marker({
+                             position: borgerhout,
+                             icon: tree,
+                             map: map
+                           });
+                           marker21.addListener('click', function() {
+                             infowindow21.open(map, marker21);
+                           });
+                           var contentString21 = '<div id="content">'+
+                                '<h1>Sander</h1>'+
+                                '</div>'+
+                                '</div>';
+                           var infowindow21 = new google.maps.InfoWindow({
+                              content: contentString21
+                            });
+
+                            var marker22 = new google.maps.Marker({
+                              position: borgerhout2,
+                              icon: tree,
+                              map: map
+                            });
+                            marker22.addListener('click', function() {
+                              infowindow22.open(map, marker22);
+                            });
+                            var contentString22 = '<div id="content">'+
+                                 '<h1>Dries</h1>'+
+                                 '</div>'+
+                                 '</div>';
+                            var infowindow22 = new google.maps.InfoWindow({
+                               content: contentString22
+                             });
+
+                             var marker23 = new google.maps.Marker({
+                               position: rollegem,
+                               icon: tree,
+                               map: map
+                             });
+                             marker23.addListener('click', function() {
+                               infowindow23.open(map, marker23);
+                             });
+                             var contentString23 = '<div id="content">'+
+                                  '<h1>Bosdroom vzw</h1>'+
+                                  '</div>'+
+                                  '</div>';
+                             var infowindow23 = new google.maps.InfoWindow({
+                                content: contentString23
+                              });
+
+                              var marker24 = new google.maps.Marker({
+                                position: roeselare,
+                                icon: tree,
+                                map: map
+                              });
+                              marker24.addListener('click', function() {
+                                infowindow24.open(map, marker24);
+                              });
+                              var contentString24 = '<div id="content">'+
+                                   '<h1>Bosdroom Mathis</h1>'+
+                                   '</div>'+
+                                   '</div>';
+                              var infowindow24 = new google.maps.InfoWindow({
+                                 content: contentString24
+                               });
+
+                               var marker25 = new google.maps.Marker({
+                                 position: roeselare2,
+                                 icon: tree,
+                                 map: map
+                               });
+                               marker25.addListener('click', function() {
+                                 infowindow25.open(map, marker25);
+                               });
+                               var contentString25 = '<div id="content">'+
+                                    '<h1>Bosdroom Maxim</h1>'+
+                                    '</div>'+
+                                    '</div>';
+                               var infowindow25 = new google.maps.InfoWindow({
+                                  content: contentString25
+                                });
       }
     </script>
 
