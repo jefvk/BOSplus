@@ -168,6 +168,13 @@
         var rollegem = {lat: 50.868403, lng: 3.144137};
         var roeselare = {lat: 50.951281, lng: 3.128826};
         var roeselare2 = {lat: 50.950807, lng: 3.115313};
+        var bornem = {lat: 51.099305, lng: 4.242452};
+        var antwerpen = {lat: 51.216801, lng: 4.403740};
+        var antwerpen2 = {lat: 51.226248, lng: 4.406097};
+        var diest = {lat: 50.985549, lng: 5.052058};
+        var oppuurs = {lat: 51.065826, lng: 4.242162};
+        var blaasveld = {lat: 51.055807, lng: 4.378329};
+        var blaasveld2 = {lat: 51.049437, lng: 4.377788};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -597,6 +604,118 @@
                                var infowindow25 = new google.maps.InfoWindow({
                                   content: contentString25
                                 });
+
+                                var marker26 = new google.maps.Marker({
+                                  position: bornem,
+                                  icon: tree,
+                                  map: map
+                                });
+                                marker26.addListener('click', function() {
+                                  infowindow26.open(map, marker26);
+                                });
+                                var contentString26 = '<div id="content">'+
+                                     '<h1>Jules</h1>'+
+                                     '</div>'+
+                                     '</div>';
+                                var infowindow26 = new google.maps.InfoWindow({
+                                   content: contentString26
+                                 });
+
+                                 var marker27 = new google.maps.Marker({
+                                   position: antwerpen,
+                                   icon: tree,
+                                   map: map
+                                 });
+                                 marker27.addListener('click', function() {
+                                   infowindow27.open(map, marker27);
+                                 });
+                                 var contentString27 = '<div id="content">'+
+                                      '<h1>Ernie</h1>'+
+                                      '</div>'+
+                                      '</div>';
+                                 var infowindow27 = new google.maps.InfoWindow({
+                                    content: contentString27
+                                  });
+
+                                  var marker28 = new google.maps.Marker({
+                                    position: antwerpen2,
+                                    icon: tree,
+                                    map: map
+                                  });
+                                  marker28.addListener('click', function() {
+                                    infowindow28.open(map, marker28);
+                                  });
+                                  var contentString28 = '<div id="content">'+
+                                       '<h1>Kerstboom</h1>'+
+                                       '</div>'+
+                                       '</div>';
+                                  var infowindow28 = new google.maps.InfoWindow({
+                                     content: contentString28
+                                   });
+
+                                   var marker29 = new google.maps.Marker({
+                                     position: diest,
+                                     icon: tree,
+                                     map: map
+                                   });
+                                   marker29.addListener('click', function() {
+                                     infowindow29.open(map, marker29);
+                                   });
+                                   var contentString29 = '<div id="content">'+
+                                        '<h1>Jean</h1>'+
+                                        '</div>'+
+                                        '</div>';
+                                   var infowindow29 = new google.maps.InfoWindow({
+                                      content: contentString29
+                                    });
+
+                                    var marker30 = new google.maps.Marker({
+                                      position: oppuurs,
+                                      icon: tree,
+                                      map: map
+                                    });
+                                    marker30.addListener('click', function() {
+                                      infowindow30.open(map, marker30);
+                                    });
+                                    var contentString30 = '<div id="content">'+
+                                         '<h1>Josy</h1>'+
+                                         '</div>'+
+                                         '</div>';
+                                    var infowindow30 = new google.maps.InfoWindow({
+                                       content: contentString30
+                                     });
+
+                                     var marker31 = new google.maps.Marker({
+                                       position: blaasveld,
+                                       icon: tree,
+                                       map: map
+                                     });
+                                     marker31.addListener('click', function() {
+                                       infowindow31.open(map, marker31);
+                                     });
+                                     var contentString31 = '<div id="content">'+
+                                          '<h1>Boomie</h1>'+
+                                          '</div>'+
+                                          '</div>';
+                                     var infowindow31 = new google.maps.InfoWindow({
+                                        content: contentString31
+                                      });
+
+                                      var marker32 = new google.maps.Marker({
+                                        position: blaasveld2,
+                                        icon: tree,
+                                        map: map
+                                      });
+                                      marker32.addListener('click', function() {
+                                        infowindow32.open(map, marker32);
+                                      });
+                                      var contentString32 = '<div id="content">'+
+                                           '<h1>Eikie</h1>'+
+                                           '</div>'+
+                                           '</div>';
+                                      var infowindow32 = new google.maps.InfoWindow({
+                                         content: contentString32
+                                       });
       }
     </script>
 
