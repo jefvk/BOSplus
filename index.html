@@ -176,6 +176,8 @@
         var blaasveld = {lat: 51.055807, lng: 4.378329};
         var blaasveld2 = {lat: 51.049437, lng: 4.377788};
         var sevilla = {lat:37.395264, lng: -5.994199};
+        var beersel= {lat:50.765707, lng: 4.303138};
+        var beersel2= {lat:50.761364, lng: 4.312065};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -733,6 +735,38 @@
                                        var infowindow33 = new google.maps.InfoWindow({
                                           content: contentString33
                                         });
+
+                                        var marker34 = new google.maps.Marker({
+                                          position: beersel,
+                                          icon: tree,
+                                          map: map
+                                        });
+                                        marker34.addListener('click', function() {
+                                          infowindow34.open(map, marker34);
+                                        });
+                                        var contentString34 = '<div id="content">'+
+                                             '<h1>Mats</h1>'+
+                                             '</div>'+
+                                             '</div>';
+                                        var infowindow34 = new google.maps.InfoWindow({
+                                           content: contentString34
+                                         });
+
+                                         var marker35 = new google.maps.Marker({
+                                           position: beersel2,
+                                           icon: tree,
+                                           map: map
+                                         });
+                                         marker35.addListener('click', function() {
+                                           infowindow35.open(map, marker35);
+                                         });
+                                         var contentString35 = '<div id="content">'+
+                                              '<h1>Gilbert</h1>'+
+                                              '</div>'+
+                                              '</div>';
+                                         var infowindow35 = new google.maps.InfoWindow({
+                                            content: contentString35
+                                          });
       }
     </script>
 
