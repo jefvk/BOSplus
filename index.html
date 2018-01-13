@@ -122,8 +122,8 @@
 <section id="third">
   <h1>Bedankt voor uw steun!</h1>
   <ul>
-    <li><i class="fa fa-tree"></i>Er zijn al <strong>139</strong> bomen verkocht!<br>Heb jij die van jouw al geregistreerd?</li>
-    <li><i class="fa fa-money"></i>Er gaat al 695 euro naar BOS+</li>
+    <li><i class="fa fa-tree"></i>Er zijn <strong>210</strong> bomen verkocht!</li>
+    <li><i class="fa fa-money"></i>Er gaat is 1050 euro naar BOS+ gegaan!</li>
   </ul>
 </section>
 
@@ -178,6 +178,9 @@
         var sevilla = {lat:37.395264, lng: -5.994199};
         var beersel= {lat:50.765707, lng: 4.303138};
         var beersel2= {lat:50.761364, lng: 4.312065};
+        var lier= {lat:51.130778, lng: 4.570531};
+        var antwerpen3={lat:51.229364, lng:4.411907};
+        var denderleeuw={lat:50.883720, lng:4.077466};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -767,6 +770,54 @@
                                          var infowindow35 = new google.maps.InfoWindow({
                                             content: contentString35
                                           });
+
+                                          var marker36 = new google.maps.Marker({
+                                            position: lier,
+                                            icon: tree,
+                                            map: map
+                                          });
+                                          marker36.addListener('click', function() {
+                                            infowindow36.open(map, marker36);
+                                          });
+                                          var contentString36 = '<div id="content">'+
+                                               '<h1>Poepieboom</h1>'+
+                                               '</div>'+
+                                               '</div>';
+                                          var infowindow36 = new google.maps.InfoWindow({
+                                             content: contentString36
+                                           });
+
+                                           var marker37 = new google.maps.Marker({
+                                             position: antwerpen3,
+                                             icon: tree,
+                                             map: map
+                                           });
+                                           marker37.addListener('click', function() {
+                                             infowindow37.open(map, marker37);
+                                           });
+                                           var contentString37 = '<div id="content">'+
+                                                '<h1>Groeize!</h1>'+
+                                                '</div>'+
+                                                '</div>';
+                                           var infowindow37 = new google.maps.InfoWindow({
+                                              content: contentString37
+                                            });
+
+                                            var marker38 = new google.maps.Marker({
+                                              position: denderleeuw,
+                                              icon: tree,
+                                              map: map
+                                            });
+                                            marker38.addListener('click', function() {
+                                              infowindow38.open(map, marker38);
+                                            });
+                                            var contentString38 = '<div id="content">'+
+                                                 '<h1>Lianas Boom</h1>'+
+                                                 '</div>'+
+                                                 '</div>';
+                                            var infowindow38 = new google.maps.InfoWindow({
+                                               content: contentString38
+                                             });
       }
     </script>
 
