@@ -181,6 +181,8 @@
         var lier= {lat:51.130778, lng: 4.570531};
         var antwerpen3={lat:51.229364, lng:4.411907};
         var denderleeuw={lat:50.883720, lng:4.077466};
+        var schaarbeek={lat:50.864907, lng:4.378022};
+        var kapellen={lat:51.310279, lng:4.434577};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9,
         styles:[{"featureType":"landscape","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":45},{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#888888"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"gamma":"0.00"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#555555"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"lightness":"90"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"lightness":"-27"},{"gamma":"4.28"},{"hue":"#0000ff"},{"saturation":"-38"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#00ffca"},{"saturation":"-15"},{"lightness":"0"},{"gamma":"0.60"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b2dfdb"},{"visibility":"on"}]}],
@@ -818,6 +820,38 @@
                                             var infowindow38 = new google.maps.InfoWindow({
                                                content: contentString38
                                              });
+
+                                             var marker39 = new google.maps.Marker({
+                                               position: schaarbeek,
+                                               icon: tree,
+                                               map: map
+                                             });
+                                             marker39.addListener('click', function() {
+                                               infowindow39.open(map, marker39);
+                                             });
+                                             var contentString39 = '<div id="content">'+
+                                                  '<h1>Tony</h1>'+
+                                                  '</div>'+
+                                                  '</div>';
+                                             var infowindow39 = new google.maps.InfoWindow({
+                                                content: contentString39
+                                              });
+
+                                              var marker40 = new google.maps.Marker({
+                                                position: kapellen,
+                                                icon: tree,
+                                                map: map
+                                              });
+                                              marker40.addListener('click', function() {
+                                                infowindow40.open(map, marker40);
+                                              });
+                                              var contentString40 = '<div id="content">'+
+                                                   '<h1>La Chapelle</h1>'+
+                                                   '</div>'+
+                                                   '</div>';
+                                              var infowindow40 = new google.maps.InfoWindow({
+                                                 content: contentString40
+                                               });
       }
     </script>
 
